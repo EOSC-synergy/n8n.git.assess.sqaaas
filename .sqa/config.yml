@@ -1,0 +1,56 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/n8n-io/n8n:
+      branch: master
+      repo: https://github.com/n8n-io/n8n.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/n8n-io/n8n git:
+        commands:
+        - /usr/bin/env sh .sqa/script.lanky-cardinal-bandicoot.sh
+        container: qc.acc_snazzy-blue-caracal
+  QC.Doc:
+    repos:
+      github.com/n8n-io/n8n find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.baggy-ruby-ostrich.sh
+        container: qc.doc_wiggy-mustard-earwig
+      github.com/n8n-io/n8n git:
+        commands:
+        - /usr/bin/env sh .sqa/script.slimy-tomato-tzu.sh
+        container: qc.doc_snoopy-ultramarine-boar
+      github.com/n8n-io/n8n markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.whiny-cyan-hyrax.sh
+        container: qc.doc_sunny-brown-cougar
+  QC.Lic:
+    repos:
+      github.com/n8n-io/n8n licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.scummy-indigo-shrew.sh
+        container: qc.lic_bluesy-sapphire-sloth
+  QC.Sty:
+    repos:
+      github.com/n8n-io/n8n hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-emerald-oriole.sh
+        container: qc.sty_woolly-olivine-cheetah
+      github.com/n8n-io/n8n jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-yellow-kudu.sh
+        container: qc.sty_scaly-cobalt-saola
+  QC.Ver:
+    repos:
+      github.com/n8n-io/n8n get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-coral-cattle.sh
+        container: qc.ver_muggy-harlequin-wildebeest
+timeout: 5400
