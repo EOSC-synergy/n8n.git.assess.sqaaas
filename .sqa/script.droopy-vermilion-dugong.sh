@@ -5,5 +5,5 @@
 
 (
 cd github.com/n8n-io/n8n &&
-    hadolint .devcontainer/Dockerfile packages/@n8n/benchmark/Dockerfile docker/images/n8n-base/Dockerfile docker/images/n8n/Dockerfile --failure-threshold error
+    pytest  --json-report  --json-report-indent 4
 )

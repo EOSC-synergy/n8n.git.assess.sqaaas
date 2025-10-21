@@ -15,42 +15,58 @@ sqa_criteria:
     repos:
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-cardinal-bandicoot.sh
-        container: qc.acc_snazzy-blue-caracal
+        - /usr/bin/env sh .sqa/script.surly-tangerine-hornet.sh
+        container: qc.acc_flimsy-cerise-pinscher
   QC.Doc:
     repos:
       github.com/n8n-io/n8n find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-ruby-ostrich.sh
-        container: qc.doc_wiggy-mustard-earwig
+        - /usr/bin/env sh .sqa/script.stealthy-taupe-dog.sh
+        container: qc.doc_homey-asparagus-seal
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-tomato-tzu.sh
-        container: qc.doc_snoopy-ultramarine-boar
+        - /usr/bin/env sh .sqa/script.lovely-indigo-tang.sh
+        container: qc.doc_hazy-malachite-dugong
       github.com/n8n-io/n8n markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-cyan-hyrax.sh
-        container: qc.doc_sunny-brown-cougar
+        - /usr/bin/env sh .sqa/script.paltry-aqua-lionfish.sh
+        container: qc.doc_skanky-fuchsia-seahorse
   QC.Lic:
     repos:
       github.com/n8n-io/n8n licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-indigo-shrew.sh
-        container: qc.lic_bluesy-sapphire-sloth
+        - /usr/bin/env sh .sqa/script.cheeky-ecru-giraffe.sh
+        container: qc.lic_silly-tomato-angelfish
+  QC.Sec:
+    repos:
+      github.com/n8n-io/n8n bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.wheezy-cerulean-caiman.sh
+        container: qc.sec_cloudy-brown-chipmunk
   QC.Sty:
     repos:
+      github.com/n8n-io/n8n flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-taupe-rattlesnake.sh
+        container: qc.sty_sleazy-lime-dog
       github.com/n8n-io/n8n hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-emerald-oriole.sh
-        container: qc.sty_woolly-olivine-cheetah
+        - /usr/bin/env sh .sqa/script.lanky-heliotrope-ferret.sh
+        container: qc.sty_dorky-khaki-saola
       github.com/n8n-io/n8n jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-yellow-kudu.sh
-        container: qc.sty_scaly-cobalt-saola
+        - /usr/bin/env sh .sqa/script.dorky-asparagus-reindeer.sh
+        container: qc.sty_shaggy-red-pig
+  QC.Uni:
+    repos:
+      github.com/n8n-io/n8n pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-vermilion-dugong.sh
+        container: qc.uni_droopy-teal-shrimp
   QC.Ver:
     repos:
       github.com/n8n-io/n8n get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-coral-cattle.sh
-        container: qc.ver_muggy-harlequin-wildebeest
+        - /usr/bin/env sh .sqa/script.droopy-crimson-javanese.sh
+        container: qc.ver_wimpy-cyan-greyhound
 timeout: 5400
