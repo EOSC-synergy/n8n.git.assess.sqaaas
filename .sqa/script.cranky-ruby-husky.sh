@@ -5,5 +5,5 @@
 
 (
 cd github.com/n8n-io/n8n &&
-    hadolint .devcontainer/Dockerfile docker/images/n8n/Dockerfile docker/images/runners/Dockerfile docker/images/n8n-base/Dockerfile packages/@n8n/benchmark/Dockerfile --failure-threshold error
+    hadolint .devcontainer/Dockerfile docker/images/n8n-base/Dockerfile docker/images/n8n/Dockerfile docker/images/runners/Dockerfile packages/@n8n/benchmark/Dockerfile --failure-threshold error
 )

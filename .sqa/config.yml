@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-tangerine-hornet.sh
-        container: qc.acc_flimsy-cerise-pinscher
+        - /usr/bin/env sh .sqa/script.muggy-beige-ray.sh
+        container: qc.acc_whiny-cornflower-cuttlefish
   QC.Doc:
     repos:
       github.com/n8n-io/n8n find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-taupe-dog.sh
-        container: qc.doc_homey-asparagus-seal
+        - /usr/bin/env sh .sqa/script.slaphappy-chestnut-lynx.sh
+        container: qc.doc_nerdy-rust-kiwi
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-indigo-tang.sh
-        container: qc.doc_hazy-malachite-dugong
+        - /usr/bin/env sh .sqa/script.snappy-ivory-frog.sh
+        container: qc.doc_hilly-silver-starfish
       github.com/n8n-io/n8n markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-aqua-lionfish.sh
-        container: qc.doc_skanky-fuchsia-seahorse
+        - /usr/bin/env sh .sqa/script.baggy-ivory-mau.sh
+        container: qc.doc_beady-auburn-centipede
   QC.Lic:
     repos:
       github.com/n8n-io/n8n licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-ecru-giraffe.sh
-        container: qc.lic_silly-tomato-angelfish
+        - /usr/bin/env sh .sqa/script.jumpy-chestnut-opossum.sh
+        container: qc.lic_flaky-orange-eleuth
   QC.Sec:
     repos:
       github.com/n8n-io/n8n bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-cerulean-caiman.sh
-        container: qc.sec_cloudy-brown-chipmunk
+        - /usr/bin/env sh .sqa/script.tacky-tangerine-crab.sh
+        container: qc.sec_skanky-tangerine-ladybird
   QC.Sty:
     repos:
       github.com/n8n-io/n8n flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-taupe-rattlesnake.sh
-        container: qc.sty_sleazy-lime-dog
+        - /usr/bin/env sh .sqa/script.flaky-peach-antelope.sh
+        container: qc.sty_lousy-aquamarine-tetra
       github.com/n8n-io/n8n hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-heliotrope-ferret.sh
-        container: qc.sty_dorky-khaki-saola
+        - /usr/bin/env sh .sqa/script.cranky-ruby-husky.sh
+        container: qc.sty_clammy-bistre-giraffe
       github.com/n8n-io/n8n jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-asparagus-reindeer.sh
-        container: qc.sty_shaggy-red-pig
+        - /usr/bin/env sh .sqa/script.stuffy-cerulean-chinook.sh
+        container: qc.sty_freaky-smalt-chinook
   QC.Uni:
     repos:
       github.com/n8n-io/n8n pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-vermilion-dugong.sh
-        container: qc.uni_droopy-teal-shrimp
+        - /usr/bin/env sh .sqa/script.bluesy-mauve-blue.sh
+        container: qc.uni_jumpy-cobalt-armadillo
   QC.Ver:
     repos:
       github.com/n8n-io/n8n get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-crimson-javanese.sh
-        container: qc.ver_wimpy-cyan-greyhound
+        - /usr/bin/env sh .sqa/script.hasty-champagne-avocet.sh
+        container: qc.ver_slaphappy-smalt-wombat
 timeout: 5400
