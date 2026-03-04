@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/n8n-io/n8n:
       branch: master
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-beige-ray.sh
-        container: qc.acc_whiny-cornflower-cuttlefish
+        - /usr/bin/env sh .sqa/script.crappy-smalt-seahorse.sh
+        container: qc.acc_hilly-aquamarine-bobcat
   QC.Doc:
     repos:
       github.com/n8n-io/n8n find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-chestnut-lynx.sh
-        container: qc.doc_nerdy-rust-kiwi
+        - /usr/bin/env sh .sqa/script.wheezy-amber-lion.sh
+        container: qc.doc_leaky-purple-macaque
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-ivory-frog.sh
-        container: qc.doc_hilly-silver-starfish
+        - /usr/bin/env sh .sqa/script.lumpy-charcoal-mau.sh
+        container: qc.doc_crabby-azure-albatross
       github.com/n8n-io/n8n markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-ivory-mau.sh
-        container: qc.doc_beady-auburn-centipede
+        - /usr/bin/env sh .sqa/script.jumpy-cerise-sparrow.sh
+        container: qc.doc_slaphappy-magenta-monster
   QC.Lic:
     repos:
       github.com/n8n-io/n8n licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-chestnut-opossum.sh
-        container: qc.lic_flaky-orange-eleuth
+        - /usr/bin/env sh .sqa/script.gamy-blue-tang.sh
+        container: qc.lic_homely-chestnut-chipmunk
   QC.Sec:
     repos:
       github.com/n8n-io/n8n bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-tangerine-crab.sh
-        container: qc.sec_skanky-tangerine-ladybird
+        - /usr/bin/env sh .sqa/script.sickly-brown-sponge.sh
+        container: qc.sec_blurry-lavender-dachshund
   QC.Sty:
     repos:
       github.com/n8n-io/n8n flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-peach-antelope.sh
-        container: qc.sty_lousy-aquamarine-tetra
+        - /usr/bin/env sh .sqa/script.leaky-pumpkin-wombat.sh
+        container: qc.sty_skinny-myrtle-vole
       github.com/n8n-io/n8n hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-ruby-husky.sh
-        container: qc.sty_clammy-bistre-giraffe
+        - /usr/bin/env sh .sqa/script.fuzzy-sapphire-moose.sh
+        container: qc.sty_skinny-maroon-dalmatian
       github.com/n8n-io/n8n jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-cerulean-chinook.sh
-        container: qc.sty_freaky-smalt-chinook
+        - /usr/bin/env sh .sqa/script.boozy-viridian-bison.sh
+        container: qc.sty_cheeky-coral-emu
   QC.Uni:
     repos:
       github.com/n8n-io/n8n pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-mauve-blue.sh
-        container: qc.uni_jumpy-cobalt-armadillo
+        - /usr/bin/env sh .sqa/script.wiggy-white-setter.sh
+        container: qc.uni_lousy-denim-beaver
   QC.Ver:
     repos:
       github.com/n8n-io/n8n get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-champagne-avocet.sh
-        container: qc.ver_slaphappy-smalt-wombat
+        - /usr/bin/env sh .sqa/script.scummy-bistre-donkey.sh
+        container: qc.ver_tacky-charcoal-bloodhound
 timeout: 5400
