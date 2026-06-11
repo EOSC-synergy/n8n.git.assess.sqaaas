@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/n8n-io/n8n:
       branch: master
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-red-cougar.sh
-        container: qc.acc_snazzy-chestnut-cow
+        - /usr/bin/env sh .sqa/script.pansy_stoic_jaguar.sh
+        container: qc.acc_porcelain_bright_spren
   QC.Doc:
     repos:
       github.com/n8n-io/n8n find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-ruby-fly.sh
-        container: qc.doc_wimpy-indigo-anteater
+        - /usr/bin/env sh .sqa/script.watermelon_zealous_shark.sh
+        container: qc.doc_seafoam_bright_hydra
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-harlequin-wolfhound.sh
-        container: qc.doc_dorky-russet-deer
+        - /usr/bin/env sh .sqa/script.orchid_motivated_serval.sh
+        container: qc.doc_royal_zealous_serval
       github.com/n8n-io/n8n markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-linen-reindeer.sh
-        container: qc.doc_homely-coral-tapir
+        - /usr/bin/env sh .sqa/script.scarlet_articulate_manatee.sh
+        container: qc.doc_smoke_eccentric_armadillo
   QC.Lic:
     repos:
       github.com/n8n-io/n8n licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-harlequin-grasshopper.sh
-        container: qc.lic_cloudy-xanthic-kudu
+        - /usr/bin/env sh .sqa/script.caramel_jubilant_moose.sh
+        container: qc.lic_forest_fearless_peacock
   QC.Sec:
     repos:
       github.com/n8n-io/n8n bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-mustard-tzu.sh
-        container: qc.sec_gummy-alizarin-paradise
+        - /usr/bin/env sh .sqa/script.sand_blissful_mink.sh
+        container: qc.sec_thunder_polite_alligator
   QC.Sty:
     repos:
       github.com/n8n-io/n8n flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-lime-ocelot.sh
-        container: qc.sty_gimpy-olive-tamarin
+        - /usr/bin/env sh .sqa/script.ash_grateful_ibex.sh
+        container: qc.sty_daffodil_compassionate_eagle
       github.com/n8n-io/n8n hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-goldenrod-penguin.sh
-        container: qc.sty_woolly-ochre-serval
+        - /usr/bin/env sh .sqa/script.ginger_visionary_dhole.sh
+        container: qc.sty_polar_romantic_quail
       github.com/n8n-io/n8n jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-razzmatazz-starfish.sh
-        container: qc.sty_muggy-periwinkle-dachsbracke
+        - /usr/bin/env sh .sqa/script.horizon_decisive_jackal.sh
+        container: qc.sty_mist_rational_gorilla
   QC.Uni:
     repos:
       github.com/n8n-io/n8n pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-bronze-bracke.sh
-        container: qc.uni_surly-salmon-dane
+        - /usr/bin/env sh .sqa/script.rose_mindful_echidna.sh
+        container: qc.uni_magenta_productive_manta
   QC.Ver:
     repos:
       github.com/n8n-io/n8n get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-khaki-caiman.sh
-        container: qc.ver_gamy-cinnabar-terrier
+        - /usr/bin/env sh .sqa/script.magenta_tranquil_phoenix.sh
+        container: qc.ver_ash_confident_gazelle
 timeout: 5400
