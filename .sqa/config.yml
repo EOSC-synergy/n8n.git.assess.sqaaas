@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint_fix
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/n8n-io/n8n:
       branch: master
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.pansy_stoic_jaguar.sh
-        container: qc.acc_porcelain_bright_spren
+        - /usr/bin/env sh .sqa/script.pineapple_cranky_hedgehog.sh
+        container: qc.acc_maroon_cranky_shark
   QC.Doc:
     repos:
       github.com/n8n-io/n8n find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.watermelon_zealous_shark.sh
-        container: qc.doc_seafoam_bright_hydra
+        - /usr/bin/env sh .sqa/script.mulberry_shrewd_boar.sh
+        container: qc.doc_zinnia_reserved_alligator
       github.com/n8n-io/n8n git:
         commands:
-        - /usr/bin/env sh .sqa/script.orchid_motivated_serval.sh
-        container: qc.doc_royal_zealous_serval
+        - /usr/bin/env sh .sqa/script.cinnabar_responsible_elk.sh
+        container: qc.doc_raspberry_observant_nighthawk
       github.com/n8n-io/n8n markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scarlet_articulate_manatee.sh
-        container: qc.doc_smoke_eccentric_armadillo
+        - /usr/bin/env sh .sqa/script.ebony_nervous_impala.sh
+        container: qc.doc_taupe_observant_unicorn
   QC.Lic:
     repos:
       github.com/n8n-io/n8n licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.caramel_jubilant_moose.sh
-        container: qc.lic_forest_fearless_peacock
+        - /usr/bin/env sh .sqa/script.pink_tactful_dingo.sh
+        container: qc.lic_carmine_gentle_marmoset
   QC.Sec:
     repos:
       github.com/n8n-io/n8n bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sand_blissful_mink.sh
-        container: qc.sec_thunder_polite_alligator
+        - /usr/bin/env sh .sqa/script.magenta_alert_gazelle.sh
+        container: qc.sec_dahlia_empathetic_seahorse
   QC.Sty:
     repos:
       github.com/n8n-io/n8n flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ash_grateful_ibex.sh
-        container: qc.sty_daffodil_compassionate_eagle
+        - /usr/bin/env sh .sqa/script.violet_sincere_cobra.sh
+        container: qc.sty_glacier_fierce_whale
       github.com/n8n-io/n8n hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.ginger_visionary_dhole.sh
-        container: qc.sty_polar_romantic_quail
+        - /usr/bin/env sh .sqa/script.sepia_reckless_cheetah.sh
+        container: qc.sty_storm_spirited_lionfish
       github.com/n8n-io/n8n jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.horizon_decisive_jackal.sh
-        container: qc.sty_mist_rational_gorilla
+        - /usr/bin/env sh .sqa/script.wheat_alert_tapir.sh
+        container: qc.sty_puce_worried_angelfish
   QC.Uni:
     repos:
       github.com/n8n-io/n8n pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.rose_mindful_echidna.sh
-        container: qc.uni_magenta_productive_manta
+        - /usr/bin/env sh .sqa/script.polar_funny_cougar.sh
+        container: qc.uni_dawn_brave_macaw
   QC.Ver:
     repos:
       github.com/n8n-io/n8n get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.magenta_tranquil_phoenix.sh
-        container: qc.ver_ash_confident_gazelle
+        - /usr/bin/env sh .sqa/script.goldenrod_confused_mink.sh
+        container: qc.ver_beige_assured_dragonfly
 timeout: 5400
